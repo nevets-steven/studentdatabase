@@ -31,7 +31,7 @@ while switch == True:
     else:
 
         student_select = int(input("Which student would you like to know more about? Enter a number 1-4:\n"))
-        if student_select in range(len(students)):
+        if student_select in range(len(students)+1):
             print(f"Student {student_select} is {students[student_select-1]}. What would you like to know?")
             while student_select != 0:
                 category = input("Enter 'hometown' or 'favorite food'\n").lower()
